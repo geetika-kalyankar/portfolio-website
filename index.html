@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://use.typekit.net/your-kit-id.css" />
     <link rel="stylesheet" href="./style.css" />
     <!-- JavaScript Link -->
-    <script src="./script.js" defer></script>
   </head>
   <body>
     <header>
@@ -71,15 +70,15 @@
               <span>VS Code</span>
             </div>
             <div>
-              <img src="./icons/icons8-seo-64.png" alt="seo"/>
+              <img src="./icons/icons8-seo-64.png" alt="seo" />
               <span>SEO</span>
             </div>
             <div>
-              <img src="./icons/icons8-sql-64.png" alt="sql"/>
+              <img src="./icons/icons8-sql-64.png" alt="sql" />
               <span>SQL</span>
             </div>
             <div>
-              <img src="./icons/icons8-api-48.png" alt="api"/>
+              <img src="./icons/icons8-api-48.png" alt="api" />
               <span>API</span>
             </div>
             <div>
@@ -91,6 +90,7 @@
           </div>
         </marquee>
       </section>
+      <!-- Projects -->
       <section id="projects" class="projects">
         <div class="projects-container max-width">
           <h3>Projects</h3>
@@ -141,7 +141,12 @@
               </div>
             </div>
             <div class="cards card-3">
-              <img src="./images/photo3.png" alt="sketch" height="200" width="200" />
+              <img
+                src="./images/photo3.png"
+                alt="sketch"
+                height="200"
+                width="200"
+              />
               <p>Sketch Board</p>
               <p class="pro-desc">
                 Developed a collaborative Sketch Board using DOM manipulation,
@@ -155,7 +160,12 @@
               >
             </div>
             <div class="cards card-4">
-              <img src="./images/photo4.png" alt="excel-sheet" height="200" width="200" />
+              <img
+                src="./images/photo4.png"
+                alt="excel-sheet"
+                height="200"
+                width="200"
+              />
               <p>Excel Sheet</p>
               <p class="pro-desc">
                 Developed a web-based Excel app using HTML, CSS, JavaScript,
@@ -167,7 +177,7 @@
                 >GitHub</a
               >
             </div>
-            <div class="cards card-4">
+            <div class="cards card-5">
               <img
                 src="./images/photo2.png"
                 alt="basic-projects"
@@ -184,7 +194,7 @@
                 ><span>GitHub</span></a
               >
             </div>
-            <div class="cards card-4">
+            <div class="cards card-6">
               <img
                 src="./images/photo1.png"
                 alt="basic-projects-2"
@@ -204,38 +214,37 @@
           </div>
         </div>
       </section>
-
+      <!-- About Section -->
       <section id="about" class="about">
         <div class="about-detail max-width">
           <div class="about-left">
             <h3>About Me</h3>
             <div class="about-container">
               <p>
-                A passionate Front-End Web Developer based in Mumbai, India, aiming to create responsive and user-friendly websites. I also focus on making websites SEO-friendly, optimizing for performance, and share my knowledge through insightful and engaging blogging.
+                A passionate Front-End Web Developer based in Mumbai, India,
+                aiming to create responsive and user-friendly websites. I also
+                focus on making websites SEO-friendly, optimizing for
+                performance, and share my knowledge through insightful and
+                engaging blogging.
               </p>
             </div>
           </div>
           <div class="about-right">
             <div class="about-card bike-pht">
-              <img src="./images/bike.jpeg" alt="bike" class="">
-
+              <img src="./images/bike.jpeg" alt="bike" />
             </div>
             <div class="about-card reading-pht">
-              <img src="./images/reading.jpeg" alt="reading" class="">
+              <img src="./images/reading.jpeg" alt="reading" />
             </div>
             <div class="about-card radio-pht">
-              <img src="./images/radio.jpeg" alt="radio" class="">
+              <img src="./images/radio.jpeg" alt="radio" />
             </div>
-              
-          </div>
-            </div>
-          
           </div>
         </div>
       </section>
-
-      <div class="cert">
-        <section class="certification max-width">
+      <!-- Certification Section -->
+      <section class="cert">
+        <div class="certification max-width">
           <h3>Certificate</h3>
           <div class="certificate-card">
             <a href="./icons/Coursera.png"
@@ -245,35 +254,64 @@
                 width="100"
                 height="100"
             /></a>
-
             <a
               href="https://www.coursera.org/account/accomplishments/professional-cert/KOR0KO2Q985B"
               ><p>Meta Front-End Developer Professional Certificate</p></a
             >
           </div>
-        </section>
-      </div>
-
-      <section class="contact">
-        <div class="contact-contianer max-width" id="contact">
-          <h2>Contact</h2>
-          <div class="connect-section">
-            <p>Let's?<br />Connect</p>
-            <ul>
-              <li>
-                <a href="mailto: geetikakalyankar31@gmail.com">E-mail</a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/geetika-kalyankar/">
-                  Linkedin</a
-                >
-              </li>
-              <li><a href="https://github.com/geetika-kalyankar">GitHub</a></li>
-              <li><a href="https://twitter.com/geetikaka">Twitter</a></li>
-              <li><a href="https://hashnode.com/@geet402">Hashnode</a></li>
-            </ul>
+        </div>
+      </section>
+      <!-- Contact Section -->
+      <section class="contact" id="contact">
+        <div class="container max-width">
+          <div class="contact-contianer">
+            <div class="contact-left">
+              <h2>Contact</h2>
+              <p>Let's?<br />Connect</p>
+            </div>
+            <div class="contact-right">
+              <ul>
+                <div class="connect-msg cont-email">
+                  <li>
+                    <a href="mailto: geetikakalyankar31@gmail.com">E-mail</a>
+                  </li>
+                  <p>Contact me via email for inquiries.</p>
+                </div>
+                <div class="connect-msg cont-linkedin">
+                  <li>
+                    <a href="https://www.linkedin.com/in/geetika-kalyankar/"
+                      >Linkedin</a
+                    >
+                  </li>
+                  <p>Connect me for upcoming projects</p>
+                </div>
+                <div class="connect-msg cont-github">
+                  <li>
+                    <a href="https://github.com/geetika-kalyankar">GitHub</a>
+                  </li>
+                  <p>liked one of the project? get the code Here!</p>
+                </div>
+                <div class="connect-msg cont-twitter">
+                  <li><a href="https://twitter.com/geetikaka">Twitter</a></li>
+                  <p>Get to know me through tweets.</p>
+                </div>
+                <div class="connect-msg cont-hash">
+                  <li><a href="https://hashnode.com/@geet402">Hashnode</a></li>
+                  <p>Sharing new ideas and knowledge</p>
+                </div>
+              </ul>
+            </div>
+            <!-- Mobile contact section -->
+            <div class="mobile-contact">
+              <ul>
+                <li><a href="mailto: geetikakalyankar31@gmail.com">G-mail</a></li>
+                <li><a href="https://www.linkedin.com/in/geetika-kalyankar/">Linkedin</a></li>
+                <li><a href="https://github.com/geetika-kalyankar">GitHub</a></li>
+                <li><a href="https://twitter.com/geetikaka">Twitter</a></li>
+                <li><a href="https://hashnode.com/@geet402">Hashnode</a></li>
+              </ul>
+            </div>
           </div>
-
           <footer>
             <p>Geetika @2024</p>
           </footer>

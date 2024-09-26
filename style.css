@@ -57,7 +57,7 @@ header nav {
   font-size: 1.5rem;
   font-weight: 500;
 }
-
+/* Front Page */
 .personal-details {
   width: 100%;
   height: 100%;
@@ -84,11 +84,10 @@ header nav {
 .desc {
   display: flex;
   justify-content: end;
-  padding: 1rem;
   margin-top: 2rem;
 }
 .desc h3 {
-  font-size: 3rem !important;
+  font-size: 3rem;
 }
 
 /* Skills Section */
@@ -99,7 +98,6 @@ marquee {
 .marquee-cont {
   display: flex;
   gap: 2rem;
-  background-color: v;
 }
 .marquee-cont div {
   display: flex;
@@ -185,7 +183,7 @@ marquee {
 }
 .certification {
   color: var(--font-color-1);
-  padding: 4rem 0;
+  padding: 3rem 0;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -194,9 +192,10 @@ marquee {
   display: flex;
   align-items: center;
   border-radius: 12px;
+  flex-wrap: wrap;
   gap: 3rem;
   width: 100%;
-  height: 20vh;
+  height: 20%;
   padding: 1.5rem;
   background-color: #3d3736;
 }
@@ -272,17 +271,23 @@ marquee {
 /* Footer Section*/
 .contact {
   background-color: var(--bg-1);
-  padding-top: 5rem;
-  padding-bottom: 2rem;
+  padding: 3rem 0;
 }
-
-.contact-contianer {
-  background-color: #3d3736;
-  padding: 1rem 5rem;
-  color: var(--font-color-1);
-  border-radius: 30px;
+.contact .container {
   display: flex;
   flex-direction: column;
+  height: 60vh;
+  background-color: #3d3736;
+  padding: 1rem 3rem;
+  border-radius: 30px;
+  gap: 2rem;
+}
+.contact-contianer {
+  color: var(--font-color-1);
+  height: -webkit-fill-available;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   gap: 1rem;
 }
 .contact h2 {
@@ -296,20 +301,72 @@ marquee {
   justify-content: space-between;
   align-items: center;
 }
+
+.contact-left {
+  width: 40%;
+  height: -webkit-fill-available;
+}
+.contact-right {
+  height: -webkit-fill-available;
+  width: 60%;
+  position: relative;
+}
 .contact ul {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   list-style-type: none;
   font-size: 16px;
   font-weight: 400;
 }
+.connect-msg {
+  width: 10rem;
+  height: 7.5rem;
+  padding: 12px;
+  transition: all 0.4s ease-in-out;
+}
+.connect-msg:hover {
+  box-shadow: 5px 0px 25px rgb(170, 163, 163);
+}
+.connect-msg li {
+  font-size: 18px;
+  font-weight: 600;
+}
+.contact .connect-msg p {
+  font-size: 14px;
+}
+.mobile-contact{
+  display: none;
+}
+.cont-email {
+  position: absolute;
+  top: 1rem;
+}
+.cont-linkedin {
+  position: absolute;
+  left: 7rem;
+  bottom: 0;
+}
+.cont-github {
+  position: absolute;
+  top: 5rem;
+  left: 20rem;
+}
+.cont-twitter {
+  position: absolute;
+  right: 5rem;
+}
+.cont-hash {
+  position: absolute;
+  bottom: 0;
+  right: 3rem;
+}
+
 footer {
   text-align: center !important;
 }
 footer p {
   /* text-align: center; */
   color: var(--font-color-1);
-  text-align: center;
   font-size: 18px !important;
 }
 @media (max-width: 780px) {
@@ -318,5 +375,88 @@ footer p {
   }
   .projects {
     padding: 1rem;
+  }
+}
+@media (max-width: 550px) {
+  header nav{
+    padding: 2rem 1rem;
+  }
+  .logo{
+    font-size: 2.5rem;
+  }
+  .menu {
+    display: none;
+  }
+  .personal-details h2 {
+    font-size: 5rem;
+  }
+  .personal-details p {
+    font-size: 2rem;
+  }
+  .desc {
+    justify-content: start;
+  }
+  .desc h3 {
+    text-align: left;
+    font-size: 2rem;
+  }
+  marquee {
+    padding: 2rem 1rem;
+  }
+  .projects-container {
+    padding: 2rem 0;
+  }
+  .about-detail {
+    flex-wrap: wrap;
+  }
+  .about-left {
+    width: 100%;
+  }
+  .bike-pht,
+  .radio-pht,
+  .reading-pht {
+    display: none;
+  }
+  .about {
+    height: 100%;
+  }
+  .cert {
+    padding: 0 1rem;
+  }
+  .cert h3,
+  .about h3,
+  .projects-container h3 {
+    font-size: 4rem;
+  }
+  .certification .certificate-card {
+    gap: 1rem;
+  }
+  .contact{
+    padding: 3rem 1rem;
+  }
+  .contact .container {
+    padding: 1rem 2rem;
+  }
+  .contact-contianer {
+    flex-wrap: wrap;
+  }
+  .contact-left {
+    width: 100%;
+    height: fit-content;
+  }
+  .contact-right {
+    display: none;
+  }
+  .mobile-contact{
+    display: block;
+    width: 100%;
+  }
+  .contact ul{
+    font-size: 18px;
+    flex-direction: column;
+    text-decoration: underline;
+  }
+  footer{
+    font-size: 18px;
   }
 }
