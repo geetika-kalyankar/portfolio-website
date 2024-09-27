@@ -382,7 +382,7 @@ footer p {
     padding: 2rem 1rem;
   }
   .logo{
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
   .menu {
     display: none;
@@ -398,7 +398,7 @@ footer p {
   }
   .desc h3 {
     text-align: left;
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   marquee {
     padding: 2rem 1rem;
@@ -425,8 +425,12 @@ footer p {
   }
   .cert h3,
   .about h3,
-  .projects-container h3 {
-    font-size: 4rem;
+  .projects-container h3, 
+  .contact h2 {
+    font-size: 3rem;
+  }
+  .about h3{
+    padding-bottom: 1rem;
   }
   .certification .certificate-card {
     gap: 1rem;
